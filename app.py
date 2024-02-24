@@ -7,7 +7,7 @@ from alchemyClasses.Pelicula import Pelicula
 from alchemyClasses.Rentar import Rentar
 from datetime import datetime
 
-#Demetrio Torres Yanahi
+#Demetrio Torres Yanahi 31916922
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://lab:Developer123!@localhost:3306/lab_ing_software'
