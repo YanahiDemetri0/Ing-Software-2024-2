@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú de Rentas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Menú de Rentas</h1>
+        <br><br>
+        <button class="button" onclick="window.location.href='/usuarios/ver_usuarios'">Ver Usuarios</button>
+        <br><br>
+        <button class="button" onclick="window.location.href='/usuarios/agregar'">Agregar Usuario</button>
+        <br><br>
+        <button class="button" onclick="window.location.href='/usuarios/actualizar/<int:id>'">Actualizar Usuario</button>
+        <br><br>
+        <button class="button" onclick="window.location.href='/usuarios/eliminar/<int:id>'">ELiminar Usuario por id</button>
+    </div>
+</body>
+</html>

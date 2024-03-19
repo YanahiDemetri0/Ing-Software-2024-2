@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuarios</title>
+</head>
+<body>
+    <div style="margin: 0 auto; width: 200px;">
+        <h1>Usuarios</h1>
+    </div>
+    <div class="table-container">
+    <table border="1">
+        <!--<table>-->
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Password</th>
+            <th>Email</th>
+            <th>Profile Picture</th>
+            <th>SuperUser</th>
+        </tr>
+        {% for usuario in usuarios %}
+        <tr>
+            <td>{{ usuario.idUsuario }}</td>
+            <td>{{ usuario.nombre }}</td>
+            <td>{{ usuario.password }}</td>
+            <td>{{ usuario.email }}</td>
+            <td>{{ usuario.profilePicture }}</td>
+            <td>{{ usuario.superUser }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    </div>
+</body>
+</html>
