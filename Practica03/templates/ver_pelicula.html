@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuarios</title>
+</head>
+<body>
+    <div style="margin: 0 auto; width: 200px;">
+        <h1>Peliculas</h1>
+    </div>
+    <div class="table-container">
+    <table border="1">
+        <!--<table>-->
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Genero</th>
+            <th>Duracion</th>
+            <th>Invetario</th>
+        </tr>
+        {% for usuario in usuarios %}
+        <tr>
+            <td>{{ usuario.idUsuario }}</td>
+            <td>{{ usuario.nombre }}</td>
+            <td>{{ usuario.genero }}</td>
+            <td>{{ usuario.duracion }}</td>
+            <td>{{ usuario.inventario }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    </div>
+</body>
+</html>

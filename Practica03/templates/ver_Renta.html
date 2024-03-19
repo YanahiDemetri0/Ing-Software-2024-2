@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rentas</title>
+</head>
+<body>
+    <div style="margin: 0 auto; width: 200px;">
+        <h1>Rentas</h1>
+    </div>
+    <div class="table-container">
+        <table>
+            <tr>
+                <th>ID Renta</th>
+                <th>ID Usuario</th>
+                <th>ID Pelicula</th>
+                <th>Fecha Renta</th>
+                <th>Dias De Renta</th>
+                <th>Estatus</th>
+            </tr>
+            {% for renta in rentas %}
+            <tr>
+                <td>{{ renta.idRentar }}</td>
+                <td>{{ renta.usuario.idUsuario }}</td>
+                <td>{{ renta.pelicula.idPelicula }}</td>
+                <td>{{ renta.fecha_renta }}</td>
+                <td>{{ renta.dias_de_renta }}</td>
+                <td>{{ renta.estatus }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+</body>
+</html>
