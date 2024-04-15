@@ -12,23 +12,7 @@ function App() {
     { id: 3, title: "Inception", director: "Christopher Nolan", inventario: 4 },
   ]);
 
-  const [alumnos, setAlumnos] = useState([
-    {
-      nombre: "Fernando",
-      apellido: "Fong",
-      numCta: 313320679,
-    },
-    {
-      nombre: "Valeria",
-      apellido: "Garcia",
-      numCta: 314006088,
-    },
-    {
-      nombre: "Erick",
-      apellido: "Martinez",
-      numCta: 414890123,
-    },
-  ]);
+  const [alumnos, setAlumnos] = useState([]);
 
   const agregarAlumno = (alumno) => {
     const nuevoAlumno = [alumno, ...alumnos];

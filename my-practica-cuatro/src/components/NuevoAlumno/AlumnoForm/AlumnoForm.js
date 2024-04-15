@@ -54,12 +54,14 @@ const AlumnoForm = (props) => {
     setApellidoIngresado("");
     setIdIngresado("");
     setEmailIngresado("");
-    setPasswordIngresado
+    setPasswordIngresado("");
 
   };
 
   return (
+
     <form onSubmit={submitHandler}>
+      <h2>Lista de Clientes</h2>
       <div className="nuevo-alumno__controls">
         <div className="nuevo-alumno__control">
           <label>Nombre: </label>
@@ -102,7 +104,10 @@ const AlumnoForm = (props) => {
           />
         </div>
         <div className="nuevo-alumno__actions">
-          <button type="submit">Agregar alumno</button>
+          <button type="submit">Agregar Cliente</button>
+        </div>
+        <div className="nuevo-alumno__actions">
+          <button type="submit">Ver Cliente</button>
         </div>
       </div>
     </form>

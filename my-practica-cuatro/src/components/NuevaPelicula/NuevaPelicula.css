@@ -1,0 +1,38 @@
+.nueva-pelicula {
+    background-color: #beee92;
+    padding: 1rem;
+    margin: 2rem auto;
+    width: 50rem;
+    max-width: 95%;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
+}
+
+.nueva-pelicula button {
+    font: inherit;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    border: 1px solid #2a5d00; /* color del contorno del boton */
+    background-color: #2a5d00; /* color del boton */
+    color: white;
+    border-radius: 12px;
+    margin-right: 1rem;
+}
+
+.nueva-pelicula button:hover,
+.nueva-pelicula button:active {
+    background-color: #510674;
+    border-color: #510674;
+}
+
+.nueva-pelicula button.alternative {
+    color: #496f2d;
+    border-color: transparent;
+    border-color: transparent;
+}
+
+.nueva-pelicula button.alternative:hover,
+.nueva-pelicula button.alternative:active {
+    background-color: #ddb3f8;
+}

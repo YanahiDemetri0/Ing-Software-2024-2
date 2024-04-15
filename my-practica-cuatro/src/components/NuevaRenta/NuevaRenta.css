@@ -1,0 +1,38 @@
+.nueva-renta {
+    background-color: #4279b8;
+    padding: 1rem;
+    margin: 2rem auto;
+    width: 50rem;
+    max-width: 95%;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
+}
+
+.nueva-renta button {
+    font: inherit;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    border: 1px solid #0e73c5;
+    background-color: #0e73c5;
+    color: white;
+    border-radius: 12px;
+    margin-right: 1rem;
+}
+
+.nueva-renta button:hover,
+.nueva-renta button:active {
+    background-color: #062374;
+    border-color: #062374;
+}
+
+.nueva-renta button.alternative {
+    color: #220131;
+    border-color: transparent;
+    border-color: transparent;
+}
+
+.nueva-renta button.alternative:hover,
+.nueva-renta button.alternative:active {
+    background-color: #ddb3f8;
+}
